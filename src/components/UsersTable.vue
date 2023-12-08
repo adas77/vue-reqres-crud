@@ -72,9 +72,11 @@
             <a
               href="#"
               :class="[
-                i == props.page ? 'bg-emerald-600 text-white hover:bg-emerald-700' : 'bg-white'
+                i == props.page
+                  ? 'bg-emerald-600 text-white hover:bg-emerald-700'
+                  : 'bg-white hover:bg-gray-100'
               ]"
-              class="flex items-center justify-center px-3 h-8 leading-tight border border-gray-300 hover:bg-gray-100"
+              class="flex items-center justify-center px-3 h-8 leading-tight border border-gray-300"
               :onClick="() => updatePage(i)"
               >{{ i }}</a
             >
