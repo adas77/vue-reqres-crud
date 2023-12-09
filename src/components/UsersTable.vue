@@ -20,17 +20,21 @@
         </button></router-link
       >
     </div>
-    <hr class="border border-slate-100" />
+    <hr class="border border-slate-100 mb-2" />
     <table class="table mb-2">
       <thead>
-        <tr class="text-slate-600 text-sm">
+        <tr class="text-slate-600 text-sm border border-none">
           <th class="w-1/12"></th>
           <th class="w-10/12">Full Name</th>
           <th class="w-1/12">Action</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="u in props.users" :key="u.id" class="bg-white even:bg-white odd:bg-slate-100">
+        <tr
+          v-for="u in props.users"
+          :key="u.id"
+          class="bg-white even:bg-white odd:bg-slate-100 border border-none text-slate-800"
+        >
           <th>
             <div class="flex items-center avatar">
               <div class="w-10 rounded-full">
