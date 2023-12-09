@@ -3,14 +3,17 @@
     <div class="flex gap-6 flex-col lg:flex-row">
       <div class="bg-white rounded-lg shadow-md lg:w-2/3">
         <div class="mt-8 lg:mt-14 mx-3 lg:mx-7">
-          <form @submit.prevent="onSubmit" class="flex flex-col gap-12 lg:gap-32 mb-5">
+          <form
+            @submit.prevent="onSubmit"
+            class="flex flex-col gap-12 lg:gap-32 mb-5 text-slate-800"
+          >
             <div class="flex gap-2 lg:gap-7">
               <div class="w-1/2 flex flex-col gap-2">
                 <p>First Name</p>
                 <input
                   name="first_name"
                   type="text"
-                  class="px-4 py-2 rounded-md focus:outline-none bg-inherit border border-gray-300 w-full"
+                  class="px-4 py-2 rounded-md focus:outline-none bg-inherit border border-gray-300 w-full font-light"
                   :placeholder="user.first_name"
                   v-model="first_name"
                 />
@@ -23,7 +26,7 @@
                 <input
                   name="last_name"
                   type="text"
-                  class="px-4 py-2 rounded-md focus:outline-none bg-inherit border border-gray-300 w-full"
+                  class="px-4 py-2 rounded-md focus:outline-none bg-inherit border border-gray-300 w-full font-light"
                   :placeholder="user.last_name"
                   v-model="last_name"
                 />
